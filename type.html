@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>type page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .head {
+            background-color: #000000;
+            width: 656px;
+            height: 150px;
+            color: #FFFFFF;
+            font-size: 48px;
+            font-family: "Michroma", sans-serif;
+            display: flex;
+            justify-content: center; 
+            align-items: center;     
+            text-align: center;
+            cursor: pointer;      
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: calc(100% - 656px); 
+            margin-left: 20px;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 20px; 
+        }
+
+        .button {
+            background-color: #D9D9D9;
+            width: 232px;
+            height: 72px;
+            border: 1px solid #000000;
+            font-size: 32px;
+            font-family: "Michroma", sans-serif;
+            display: flex;
+            justify-content: center; 
+            align-items: center;     
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .main-container {
+            display: flex;
+            justify-content: space-around; 
+            margin: 50px 153px;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            text-align: center;
+            width: 300px; 
+            margin-top: 253px;
+        }
+
+        .main-content img {
+            width: 520px;
+            height: 460px;
+        }
+
+        .main-content p {
+            margin: 10px 0 0 0;
+            font-size: 24px;
+            font-family: "Michroma", sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="head" id="head">Coffee Time</div>
+        <div class="nav">
+            <div class="nav-buttons">
+                <input type="button" id="type" class="button" value="원두 종류">
+                <input type="button" id="buy" class="button" value="구매">
+            </div>
+            <input type="button" id="login" class="button" value="로그인">
+        </div>
+    </div>
+    
+    <div class="main-container">
+        <div class="main-content">
+            <img src="/project/website practice/img/kenya.jpg" alt="Kenya Coffee">
+            <p>케냐산 원두</p>
+            <p>₩8,000</p>
+        </div>
+        <div class="main-content">
+            <img src="/project/website practice/img/indonesia.jpg" alt="Indonesia Coffee">
+            <p>인도네시아산 원두</p>
+            <p>₩6,000</p>
+        </div>
+        <div class="main-content">
+            <img src="/project/website practice/img/Brazill.jpg" alt="Brazil Coffee">
+            <p>브라질산 원두</p>
+            <p>₩4,000</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('head').onclick = () => location =('http://127.0.0.1:5500/project/website%20practice/mainpage.html');
+        document.getElementById('buy').onclick = () => location = ('http://127.0.0.1:5500/project/website%20practice/buy.html');
+        document.getElementById('login').onclick = () => location = ('http://127.0.0.1:5500/project/website%20practice/login.html');
+    </script>
+</body>
+</html>
