@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>type page</title>
+    <title>login page</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 
@@ -33,7 +33,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            width: calc(100% - 656px); 
+            width: calc(100% - 656px);
             margin-left: 20px;
         }
 
@@ -65,33 +65,47 @@
             background-color: saddlebrown;
         }
 
-
         .main-container {
-            display: flex;
-            justify-content: space-around; 
-            margin: 50px 153px;
-        }
-
-        .main-content {
-            display: flex;
-            flex-direction: column; 
-            align-items: center; 
-            text-align: center;
-            width: 300px; 
-            margin-top: 253px;
-        }
-
-        .main-content img {
-            width: 520px;
-            height: 460px;
-            cursor: pointer;
-        }
-
-        .main-content p {
-            margin: 10px 0 0 0;
             font-size: 24px;
-            font-family: "Michroma", sans-serif;
+            font-family: "Michroma", sans-serif; 
+            text-align: center;
+            margin-top: 200px;
         }
+
+        .area {
+            width: 750px;
+            height: 60px;
+            margin-bottom: 20px;
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px; 
+            margin-top: 40px;
+        }
+
+        .btn {
+            color: #FFFFFF;
+            width: 260px;  
+            height: 80px;
+            border: none;
+            font-size: 32px;
+            font-family: "Michroma", sans-serif;
+            display: flex;
+            justify-content: center; 
+            align-items: center;     
+            text-align: center;
+            cursor: pointer;
+            background-color: #3234a8;
+            border-radius: 10px;
+        }
+        
+        .btn:active {
+            background-color: #000000;
+        }
+
     </style>
 </head>
 <body>
@@ -102,39 +116,25 @@
                 <input type="button" id="type" class="button" value="원두 종류">
                 <input type="button" id="buy" class="button" value="구매">
             </div>
-            <input type="button" id="login" class="button" value="로그인">
         </div>
     </div>
-    
+
     <div class="main-container">
-        <div class="main-content">
-            <img src="/project/website practice/img/kenya.jpg" alt="Kenya Coffee" id="kenya">
-            <p>케냐산 원두</p>
-            <p>₩8,000</p>
-        </div>
-        <div class="main-content">
-            <img src="/project/website practice/img/indonesia.jpg" alt="Indonesia Coffee" id="indonesia">
-            <p>인도네시아산 원두</p>
-            <p>₩6,000</p>
-        </div>
-        <div class="main-content">
-            <img src="/project/website practice/img/Brazill.jpg" alt="Brazill Coffee" id="Brazill">
-            <p>브라질산 원두</p>
-            <p>₩4,000</p>
+        <div>로그인</div>
+        <input type="text" class="area">
+        <div>비밀번호</div>
+        <input type="password" class="area">
+
+        <div class="btn-container">
+            <div class="btn" id="auto">로그인</div>
+            <div class="btn" id="regist">회원가입</div>
         </div>
     </div>
 
     <script>
-        const $test = document.getElementById('buy');
-        $test.addEventListener('click', function() {
-            alert('추석 연휴에는 배송이 지연 될수 있습니다.')
-        });
+        document.getElementById('auto').onclick = () => location = ('http://127.0.0.1:5500/project/website%20practice/logintrue.html');
         document.getElementById('head').onclick = () => location =('http://127.0.0.1:5500/project/website%20practice/mainpage.html');
-        document.getElementById('buy').onclick = () => location = ('http://127.0.0.1:5500/project/website%20practice/buy.html');
-        document.getElementById('login').onclick = () => location = ('http://127.0.0.1:5500/project/website%20practice/login.html');
-        document.getElementById('kenya').onclick = () => location = ('http://127.0.0.1:5500/project/website%20practice/kenya.html');
-        document.getElementById('indonesia').onclick = () => location = ('http://127.0.0.1:5500/project/website%20practice/indonesia.html');
-        document.getElementById('Brazill').onclick = () => location = ('http://127.0.0.1:5500/project/website%20practice/brazill.html');
+        document.getElementById('regist').onclick = () => location = ('http://127.0.0.1:5500/project/website%20practice/register.html');
     </script>
 </body>
 </html>
