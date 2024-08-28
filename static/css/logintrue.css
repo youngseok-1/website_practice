@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.head {
+    background-color: #000000;
+    width: 656px;
+    height: 150px;
+    color: #FFFFFF;
+    font-size: 48px;
+    font-family: "Michroma", sans-serif;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;
+    cursor: pointer;      
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 656px); 
+    margin-left: 20px;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.button {
+    color: #FFFFFF;
+    background-color: #0a0a23;
+    width: 232px;
+    height: 72px;
+    border: none;
+    border-radius: 10px;
+    font-size: 32px;
+    font-family: "Michroma", sans-serif;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;
+    cursor: pointer;
+    padding: 15px;
+    min-height: 30px;
+    min-width: 120px;
+}
+
+.button:active {
+    background-color: saddlebrown;
+}
+
+#area {
+    width: 720.65px;
+    height: 750px;
+    margin-top: 225px;
+    margin-left: 593px;
+    border: 1px #000000 solid;
+}
+#string {
+    font-size: 48px;
+    margin-top: 140px;
+    text-align: center;
+}
+#area2{
+    color: #FFFFFF;
+    border: none;
+    width: 385px;
+    height: 200px;
+    font-size: 48px;
+    font-family: "Michroma", sans-serif;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;
+    cursor: pointer; 
+    margin-left: 169px;
+    margin-top: 200px;
+    background-color: #3234a8;
+    border-radius: 10px;    
+}
+#area2:active {
+    background-color: #000000 ;
+}

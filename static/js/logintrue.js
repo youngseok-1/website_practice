@@ -1,0 +1,1 @@
+document.getElementById('area2').onclick = () => location = ('http://127.0.0.1:5500/mainpage.html')

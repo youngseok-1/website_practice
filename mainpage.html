@@ -4,121 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>main page</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
-
-        .container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-        .head {
-            background-color: #000000;
-            width: 656px;
-            height: 150px;
-            color: #FFFFFF;
-            font-size: 48px;
-            font-family: "Michroma", sans-serif;
-            display: flex;
-            justify-content: center; 
-            align-items: center;     
-            text-align: center;
-            cursor: pointer;      
-        }
-
-        .nav {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: calc(100% - 656px); 
-            margin-left: 20px;
-        }
-
-        .nav-buttons {
-            display: flex;
-            gap: 20px;
-        }
-
-        .button {
-            background-color: #D9D9D9;
-            width: 232px;
-            height: 72px;
-            border: 1px solid #000000;
-            font-size: 32px;
-            font-family: "Michroma", sans-serif;
-            display: flex;
-            justify-content: center; 
-            align-items: center;     
-            text-align: center;
-            cursor: pointer;
-        }
-
-        .main-content {
-            display: flex;
-            align-items: flex-start; 
-            margin: 50px 153px; 
-        }
-
-        #img img {
-            width: 1000px;
-            height: 666px;
-            object-fit: cover;
-        }
-
-        .text-content {
-            margin-left: 50px; 
-        }
-
-        #main1 {
-            font-size: 48px;
-            font-family: "Michroma", sans-serif;
-            margin-bottom: 20px;
-        }
-
-        #main2 {
-            font-size: 36px;
-            font-family: "Michroma", sans-serif;
-        }
-    </style>
+    <link rel="stylesheet" href="/static/css/main.css">
 </head>
 <body>
     <div class="container">
-        <div class="head" id="head">Coffee Time</div>
-        <div class="nav">
-            <div class="nav-buttons">
-                <input type="button" id="type" class="button" value="원두 종류">
-                <input type="button" id="buy" class="button" value="구매">
-            </div>
-            <input type="button" id="login" class="button" value="로그인">
-        </div>
-    </div>
-    
-    <div class="main-content">
-        <div id="img">
-            <img src="/project/website practice/img/coffee main.webp" alt="Coffee Image">
-        </div>
-        <div class="text-content">
-            <div id="main1">Coffee Time</div>
-            <div id="main2">
-                커피의 효능
-                <ol type="1">
-                    <li>기억력과 집중력 향상</li>
-                    <li>심혈관 질환 예방</li>
-                    <li>신체기능 향상과 다이어트 효과</li>
-                    <li>심장병 및 당뇨병 예방</li>
-                    <li>숙취 해소</li>
-                </ol>
+        <div class="header">
+            <div class="head" id="head">Coffee Time</div>
+            <div class="nav">
+                <div class="nav-buttons">
+                    <input type="button" id="type" class="button" value="원두 종류">
+                    <input type="button" id="buy" class="button" value="구매">
+                </div>
+                <input type="button" id="login" class="button" value="로그인">
             </div>
         </div>
+        
+        <div class="main-content">
+            <div id="img">
+                <img src="/static/img/coffee main.webp" alt="Coffee Image">
+            </div>
+            <div class="text-content">
+                <div id="main1">Coffee Time</div>
+                <div id="main2">
+                    커피의 효능
+                    <ol type="1">
+                        <li>기억력과 집중력 향상</li>
+                        <li>심혈관 질환 예방</li>
+                        <li>신체기능 향상과 다이어트 효과</li>
+                        <li>심장병 및 당뇨병 예방</li>
+                        <li>숙취 해소</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <script>
-        document.getElementById('head').onclick = () => location.reload();
-        document.getElementById('type').onclick = () => location = ('http://127.0.0.1:5500/project/website%20practice/type.html');
-        document.getElementById('buy').onclick = () => location = ('http://127.0.0.1:5500/project/website%20practice/buy.html')
-    </script>
+    <script src="/static/js/main.js"></script>
 </body>
 </html>

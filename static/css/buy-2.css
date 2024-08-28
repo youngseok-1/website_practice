@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.head {
+    background-color: #000000;
+    width: 656px;
+    height: 150px;
+    color: #FFFFFF;
+    font-size: 48px;
+    font-family: "Michroma", sans-serif;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;
+    cursor: pointer;      
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 656px); 
+    margin-left: 20px;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.button {
+    color: #FFFFFF;
+    background-color: #0a0a23;
+    width: 232px;
+    height: 72px;
+    border: none;
+    border-radius: 10px;
+    font-size: 32px;
+    font-family: "Michroma", sans-serif;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;
+    cursor: pointer;
+    padding: 15px;
+    min-height: 30px;
+    min-width: 120px;
+}
+
+.button:active {
+    background-color: saddlebrown;
+}
+#img img {
+    width: 1000px;
+    height: 666px;
+    object-fit: cover;
+}
+
+.text-content {
+    margin-left: 50px; 
+}
+
+#main1 {
+    font-size: 48px;
+    font-family: "Michroma", sans-serif;
+    margin-bottom: 20px;
+}
+
+#main2 {
+    font-size: 36px;
+    font-family: "Michroma", sans-serif;
+}
+.select {
+    width: 1200px;
+    height: 103px;
+    font-size: 48px;
+    margin-left: 90px;
+}
+
+#title {
+    font-family: "Michroma", sans-serif;
+    font-size: 64px;
+    margin-left: 60px;
+    margin-top: 50px;
+}
+
+.label-container {
+    display: flex;
+    align-items: center;
+    font-family: "Michroma", sans-serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.btn{
+    color: #FFFFFF;
+    border: 1px solid #000000;
+    width: 350px;
+    height: 150px;
+    margin-top: 270px;
+    border: none;
+    font-size: 128px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    background-color: #3234a8;
+    border-radius: 10px;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.btn:active {
+    background-color: #000000;
+}
+
+#cancle {
+    background-color: red;
+}
+
+#cancle:active {
+    background-color: #000000;
+
+}

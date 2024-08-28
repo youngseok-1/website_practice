@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buy-2 page</title>
+    <style>
+    </style>
+<link rel="stylesheet" href="/static/css/buy-2.css">    
+</head>
+<body>
+    <div class="container">
+        <div class="head" id="head">Coffee Time</div>
+        <div class="nav">
+            <div class="nav-buttons">
+                <input type="button" id="type" class="button" value="원두 종류">
+                <input type="button" id="buy" class="button" value="구매">
+            </div>
+            <input type="button" id="login" class="button" value="로그인">
+        </div>
+    </div>
+    <br>
+    <br>
+    <h1 id="title">구매 페이지</h1>
+
+    <div class="form-container">
+        <label class="label-container">
+            원두&nbsp;종류
+            <select name="beans" id="beans" class="select">
+                <option value="kenya">케냐산</option>
+                <option value="indonesia">인도네시아산</option>
+                <option value="Brazil">브라질산</option>
+            </select>
+        </label>
+        
+        <label class="label-container">
+            결제&nbsp;방식
+            <select name="payment" id="payment" class="select">
+                <option value="Card">카드</option>
+                <option value="Kakao">카카오페이</option>
+                <option value="Toss">토스</option>
+                <option value="Samsung">삼성페이</option>
+            </select>
+        </label>
+    </div>
+
+    <div class="btn-container">
+        <div class="btn" id="buy-btn">구매</div>
+        <div class="btn" id="cancle">취소</div>
+    </div>
+    <script src="/static/js/buy-2.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,2 @@
+        document.getElementById('buy-btn').onclick = () => location =('http://127.0.0.1:5500/buy-3.html')
+        document.getElementById('cancle').onclick = () => location = ('http://127.0.0.1:5500/mainpage.html')
