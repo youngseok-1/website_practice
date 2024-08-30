@@ -1,2 +1,2 @@
-document.getElementById('buypage').onclick = () => location = ('http://127.0.0.1:5500/template/buy-2.html');
-document.getElementById('before').onclick = () => location = ('http://127.0.0.1:5500/template/type.html');
+document.getElementById('buypage').onclick = () => location = ('buy-2.html');
+document.getElementById('before').onclick = () => location = ('type.html');
