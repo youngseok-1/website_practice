@@ -53,11 +53,7 @@
     min-height: 30px;
     min-width: 120px;
 }
-
-.button:active {
-    background-color: saddlebrown;
-}
-.main-container {
+main-container {
     display: flex;
     justify-content: center;
     align-items: center;

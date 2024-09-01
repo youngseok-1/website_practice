@@ -54,9 +54,7 @@
     min-width: 120px;
 }
 
-.button:active {
-    background-color: saddlebrown;
-}
+
 .main-container {
     display: flex;
     justify-content: center;
